@@ -16,7 +16,9 @@ import com.dahe.picturebrowse.widget.PreviewViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Created by cying on 2017/5/19.
+ */
 public class PicturePreviewActivity extends FragmentActivity {
 
     private ImageButton left_back;
