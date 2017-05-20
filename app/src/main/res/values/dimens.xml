@@ -1,0 +1,42 @@
+<resources>
+
+    <!--cn Activity-->
+    <dimen name="cn_padding_crop_frame">16dp</dimen>
+    <dimen name="cn_size_dot_scale_text_view">8dp</dimen>
+    <dimen name="cn_height_horizontal_wheel_progress_line">20dp</dimen>
+    <dimen name="cn_width_horizontal_wheel_progress_line">2dp</dimen>
+    <dimen name="cn_margin_horizontal_wheel_progress_line">10dp</dimen>
+    <dimen name="cn_height_wrapper_controls">64dp</dimen>
+    <dimen name="cn_height_wrapper_states">72dp</dimen>
+    <dimen name="cn_height_divider_shadow">3dp</dimen>
+    <dimen name="cn_text_size_widget_text">13sp</dimen>
+    <dimen name="cn_margit_top_widget_text">10sp</dimen>
+    <dimen name="cn_size_wrapper_rotate_button">50dp</dimen>
+    <dimen name="cn_height_crop_aspect_ratio_text">40dp</dimen>
+    <dimen name="cn_progress_size">30dp</dimen>
+
+    <!--Crop View-->
+    <dimen name="cn_default_crop_grid_stoke_width">1dp</dimen>
+    <dimen name="cn_default_crop_frame_stoke_width">1dp</dimen>
+    <dimen name="cn_default_crop_rect_corner_touch_threshold">30dp</dimen>
+    <dimen name="cn_default_crop_rect_min_size">100dp</dimen>
+    <dimen name="cn_default_crop_rect_corner_touch_area_line_length">10dp</dimen>
+    <dimen name="alert_width">86dp</dimen>
+
+    <dimen name="middle_text_size">17sp</dimen>
+    <dimen name="margin_text">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+</resources>
