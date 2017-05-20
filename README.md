@@ -7,4 +7,4 @@
 示例
 -------
 
-![](https://github.com/cying112115/PictureBrowse/images/device-2017-05-20-175354.gif) 
+![](https://github.com/cying112115/PictureBrowse/blob/develop/images/device-2017-05-20-175354.gif) 
