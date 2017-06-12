@@ -1,4 +1,4 @@
-package com.dahe.picturebrowse.ui.fragment;
+package com.dahe.picturebrowse.mvp.ui.fragment;
 
 import android.Manifest;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.dahe.picturebrowse.R;
 import com.dahe.picturebrowse.constants.Constants;
-import com.dahe.picturebrowse.ui.activity.PicturePreviewActivity;
+import com.dahe.picturebrowse.mvp.ui.activity.PicturePreviewActivity;
 import com.dahe.picturebrowse.utils.FileUtils;
 import com.dahe.picturebrowse.utils.ScreenUtils;
 import com.dahe.picturebrowse.utils.Utils;

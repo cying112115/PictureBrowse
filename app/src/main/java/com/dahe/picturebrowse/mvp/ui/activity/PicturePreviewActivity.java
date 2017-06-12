@@ -1,4 +1,4 @@
-package com.dahe.picturebrowse.ui.activity;
+package com.dahe.picturebrowse.mvp.ui.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.dahe.picturebrowse.R;
-import com.dahe.picturebrowse.ui.fragment.PicturePreviewFragment;
+import com.dahe.picturebrowse.mvp.ui.fragment.PicturePreviewFragment;
 import com.dahe.picturebrowse.widget.PreviewViewPager;
 
 import java.util.ArrayList;

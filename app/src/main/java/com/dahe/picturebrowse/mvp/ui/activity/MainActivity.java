@@ -1,4 +1,4 @@
-package com.dahe.picturebrowse.ui.activity;
+package com.dahe.picturebrowse.mvp.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.dahe.picturebrowse.R;
-import com.dahe.picturebrowse.ui.base.BaseActivity;
+import com.dahe.picturebrowse.mvp.ui.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

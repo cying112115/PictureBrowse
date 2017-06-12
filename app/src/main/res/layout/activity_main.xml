@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:paddingEnd="10dp"
     android:paddingStart="10dp"
-    tools:context="com.dahe.picturebrowse.ui.activity.MainActivity">
+    tools:context="com.dahe.picturebrowse.mvp.ui.activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"

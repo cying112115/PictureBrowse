@@ -1,4 +1,4 @@
-package com.dahe.picturebrowse.ui.base;
+package com.dahe.picturebrowse.mvp.ui.base;
 
 import android.content.Context;
 import android.content.Intent;

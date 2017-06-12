@@ -2,6 +2,7 @@ package com.dahe.picturebrowse.constants;
 
 /**
  * Created by cying on 2017/5/20.
+ * 常量
  */
 
 public class Constants {
