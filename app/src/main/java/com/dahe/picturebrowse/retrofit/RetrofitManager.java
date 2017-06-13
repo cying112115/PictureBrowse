@@ -63,7 +63,7 @@ public class RetrofitManager {
                 .readTimeout(120 * 1000, TimeUnit.MILLISECONDS)
                 .connectTimeout(120 * 1000, TimeUnit.MILLISECONDS)
                 .cookieJar(new JavaNetCookieJar(cookieHandler)) //  TODO  JavaNetCookieJar  →  compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
-//                .addInterceptor(logging)
+                .addInterceptor(logging)
                 .addInterceptor(new Interceptor() { // TODO 设置通用的 Headers
                     @Override
                     public Response intercept(Chain chain) throws IOException {
