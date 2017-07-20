@@ -2,16 +2,10 @@ package com.dahe.picturebrowse.retrofit.config;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
-import com.google.gson.stream.JsonReader;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 
-import cn.dahe.central.AppApplication;
-import cn.dahe.central.mvp.bean.BaseGenericResult;
-import okhttp3.MediaType;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
 
@@ -30,31 +24,36 @@ final class GsonResponseBodyConverter<T> implements Converter<ResponseBody, T> {
         this.adapter = adapter;
     }
 
-    @Override public T convert(ResponseBody value) throws IOException {
-        String response=value.string();
-        BaseGenericResult result = gson.fromJson(response, BaseGenericResult.class);
-        if(result.getResult()==TOKEN_FAIL){
-            //重新登录
-            AppApplication.getInstance().loginAgain();
-            return null;
-        }else if(result.getResult() == 2){
-            AppApplication.getInstance().offlineTip();
-            return null;
-        }
-        if(result.getResult()!=200){
-            value.close();
-            ApiError error = new ApiError(result.getMsg(),result.getResult());
-            throw  error;
-        }
-        MediaType mediaType = value.contentType();
-        Charset charset = mediaType != null ? mediaType.charset(UTF_8) : UTF_8;
-        ByteArrayInputStream bis = new ByteArrayInputStream(response.getBytes());
-        InputStreamReader reader = new InputStreamReader(bis,charset);
-        JsonReader jsonReader = new JsonReader(reader);
-        try {
-            return adapter.read(jsonReader);
-        }finally {
-            value.close();
-        }
+    @Override
+    public T convert(ResponseBody value) throws IOException {
+        return null;
     }
+
+    //    @Override public T convert(ResponseBody value) throws IOException {
+//        String response=value.string();
+//        BaseGenericResult result = gson.fromJson(response, BaseGenericResult.class);
+//        if(result.getResult()==TOKEN_FAIL){
+//            //重新登录
+//            AppApplication.getInstance().loginAgain();
+//            return null;
+//        }else if(result.getResult() == 2){
+//            AppApplication.getInstance().offlineTip();
+//            return null;
+//        }
+//        if(result.getResult()!=200){
+//            value.close();
+//            ApiError error = new ApiError(result.getMsg(),result.getResult());
+//            throw  error;
+//        }
+//        MediaType mediaType = value.contentType();
+//        Charset charset = mediaType != null ? mediaType.charset(UTF_8) : UTF_8;
+//        ByteArrayInputStream bis = new ByteArrayInputStream(response.getBytes());
+//        InputStreamReader reader = new InputStreamReader(bis,charset);
+//        JsonReader jsonReader = new JsonReader(reader);
+//        try {
+//            return adapter.read(jsonReader);
+//        }finally {
+//            value.close();
+//        }
+//    }
 }
